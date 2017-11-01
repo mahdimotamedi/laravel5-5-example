@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +14,9 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('adminlte/css/AdminLTE.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('adminlte/css/AdminLTE-rtl.min.css') }}">
   <!-- AdminLTE Skins. -->
-  <link rel="stylesheet" href="{{ asset('adminlte/css/skins/skin-blue.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('adminlte/css/skins/_all-skins-rtl.css') }}">
 
   @yield('css')
 

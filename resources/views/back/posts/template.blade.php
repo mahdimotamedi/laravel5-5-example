@@ -203,7 +203,7 @@
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
     <script>
 
-        CKEDITOR.replace('body', {customConfig: '/adminlte/js/ckeditor.js'})
+        CKEDITOR.replace('body', {customConfig: '{{ asset("adminlte/js/ckeditor.js") }}'})
 
         $('.popup_selector').click( function (event) {
             event.preventDefault()
