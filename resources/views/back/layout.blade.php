@@ -18,6 +18,8 @@
   <!-- AdminLTE Skins. -->
   <link rel="stylesheet" href="{{ asset('adminlte/css/skins/_all-skins-rtl.css') }}">
 
+  <link rel="stylesheet" href="{{ asset('css/main-fa.css') }}">
+
   @yield('css')
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -117,7 +119,7 @@ desired effect
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-right">
-                  <a id="logout" href="#" class="btn btn-default btn-flat">@lang('Sign out')</a>
+                  <a id="logout" href="#" class="btn btn-danger btn-flat">خروج</a>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hide">
                     {{ csrf_field() }}
                   </form>

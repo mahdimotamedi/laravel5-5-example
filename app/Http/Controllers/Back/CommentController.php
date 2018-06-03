@@ -29,6 +29,7 @@ class CommentController extends Controller
      *
      * @param  \App\Models\Comment $comment
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function updateSeen(Comment $comment)
     {
@@ -42,6 +43,7 @@ class CommentController extends Controller
      *
      * @param  \App\Models\Comment $comment
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Comment $comment)
     {

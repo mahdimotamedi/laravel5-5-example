@@ -31,6 +31,7 @@ class PostController extends Controller
      *
      * @param  \App\Models\Post $post
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function updateSeen(Post $post)
     {
@@ -95,6 +96,7 @@ class PostController extends Controller
      *
      * @param  \App\Models\Post $post
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function edit(Post $post)
     {
@@ -108,9 +110,10 @@ class PostController extends Controller
     /**
      * Update the post in storage.
      *
-     * @param  \App\Http\Requests\PostRequest  $request
+     * @param  \App\Http\Requests\PostRequest $request
      * @param  \App\Models\Post $post
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function update(PostRequest $request, Post $post)
     {
@@ -126,6 +129,7 @@ class PostController extends Controller
      *
      * @param Post $post
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function destroy(Post $post)
     {

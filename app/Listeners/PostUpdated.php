@@ -10,7 +10,7 @@ class PostUpdated
     /**
      * Handle the event.
      *
-     * @param  PostUpdated  $event
+     * @param EventPostUpdated $event
      * @return void
      */
     public function handle(EventPostUpdated $event)

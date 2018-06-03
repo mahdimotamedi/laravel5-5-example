@@ -59,8 +59,9 @@ class CommentController extends Controller
      * Update the specified comment in storage.
      *
      * @param  \App\Http\requests\CommentRequest $request
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\Comment $comment
      * @return array
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function update(CommentRequest $request, Comment $comment)
     {
@@ -77,6 +78,7 @@ class CommentController extends Controller
      * Remove the specified comment from storage.
      * @param Comment $comment
      * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function destroy(Comment $comment)
     {
@@ -90,9 +92,10 @@ class CommentController extends Controller
     /**
      * Get the next comments for the specified post.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Post $post
      * @param  integer $page
      * @return array
+     * @throws \Throwable
      */
     public function comments(Post $post, $page)
     {
