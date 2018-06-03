@@ -1,8 +1,8 @@
-## Laravel 5-5 example ##
+## Laravel 5-5 persian example ##
 
-**Laravel 5-5 example** is a tutorial application.
+**Laravel 5-5 persian example** is a tutorial application.
 
-### Installation ###
+### مراحل نصب ###
 
 * type `git clone https://github.com/bestmomo/laravel5-5-example.git projectname` to clone the repository 
 * type `cd projectname`
@@ -20,7 +20,7 @@
 * type `php artisan migrate --seed` to create and populate tables
 * edit *.env* for emails configuration
 
-### Include ###
+### شامل کتابخانه های: ###
 
 * [Styleshout](https://www.styleshout.com/) for front template
 * [CKEditor](http://ckeditor.com) the great editor
@@ -34,7 +34,7 @@
 * [Laravel debugbar](https://github.com/barryvdh/laravel-debugbar)
 * [Etrepat baum](https://github.com/etrepat/baum) for comments management
 
-### Features ###
+### امکانات ###
 
 * Home page
 * Custom error pages 403, 404 and 503
@@ -51,7 +51,7 @@
 * Thumbs creation for images
 * Notifications to send emails and notify redactors for new comments
 
-### Tricks ###
+### فوت و فن ###
 
 To use application the database is seeding with users :
 
@@ -60,7 +60,7 @@ To use application the database is seeding with users :
 * User : email = walker@la.fr, password = walker
 * User : email = slacker@la.fr, password = slacker
 
-### Tests ###
+### تست ###
 
 When you want to launch the tests refresh and populate the database :
 
@@ -70,6 +70,6 @@ You must have default settings and en language.
 
 You can then use Dusk.
 
-### License ###
+### لایسنس ###
 
 This example for Laravel is open-sourced software licensed under the MIT license
